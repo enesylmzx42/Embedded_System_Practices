@@ -6,7 +6,7 @@ import math
 pygame.init()
 
 SCREEN_WIDTH = 1200
-SCREEN_HEIGHT = 681  # Tablo boyutlarına göre güncellendi
+SCREEN_HEIGHT = 681  
 BOTTOM_PANEL = 50
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT + BOTTOM_PANEL))
@@ -38,9 +38,9 @@ WHITE = (255, 255, 255)
 font = pygame.font.SysFont("Arial", 30)
 large_font = pygame.font.SysFont("Arial", 60)
 
-cue_image = pygame.image.load("assets/images/cue.png").convert_alpha()
-table_image = pygame.image.load("assets/images/table.png").convert_alpha()
-ball_images = [pygame.image.load(f"assets/images/ball_{i}.png").convert_alpha() for i in range(1, 17)]
+cue_image = pygame.image.load("images/cue.png").convert_alpha()
+table_image = pygame.image.load("images/table.png").convert_alpha()
+ball_images = [pygame.image.load(f"images/ball_{i}.png").convert_alpha() for i in range(1, 17)]
 
 def draw_text(text, font, text_col, x, y):
     img = font.render(text, True, text_col)
